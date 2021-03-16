@@ -7,6 +7,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" th:replace="fragments/common :: menu('board')"></nav>
     <main class="container">
             <h2>게시판</h2>
+            <div>총 건수 : <span th:text="${#lists.size(boards)}"></span></div>
     </main>
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
