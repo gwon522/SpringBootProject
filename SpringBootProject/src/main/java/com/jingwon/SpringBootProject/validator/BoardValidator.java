@@ -12,7 +12,6 @@ public class BoardValidator implements Validator {
     public boolean supports(Class<?> clazz) {
         return Board.class.equals(clazz);
     }
-
     @Override
     public void validate(Object o, Errors e) {
         Board board = (Board) o;
