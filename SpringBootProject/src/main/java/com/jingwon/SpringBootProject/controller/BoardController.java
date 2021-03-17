@@ -23,4 +23,9 @@ public class BoardController {
         model.addAttribute("boards",boards);
         return "board/list";
     }
+
+    @GetMapping("/write")
+    public String write(){
+        return "board/write";
+    }
 }
