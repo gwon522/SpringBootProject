@@ -44,6 +44,7 @@ public class BoardController {
         model.addAttribute("board", new Board());
         return "board/write";
     }
+
     @PostMapping("/write")
     public String writeSave(@Valid Board board, BindingResult bindingResult){
         boardValidator.validate(board,bindingResult);
