@@ -6,11 +6,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/")
-public class HomeController {
+@RequestMapping("/account")
+public class AccountController {
 
-    @GetMapping
-    public String index(){
-        return "index";
+    @GetMapping("/login")
+    public String login(Model model){
+
+        return "account/login";
+    }
+
+    @GetMapping("/joinus")
+    public String joinus(Model model){
+
+        return "account/joinus";
     }
 }
